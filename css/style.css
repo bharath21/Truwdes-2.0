@@ -126,6 +126,14 @@ h4 {
 .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
+    margin-right: 22px;
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+.icon-bar
+{
+  border: 1px solid white;
 }
 footer .glyphicon {
     font-size: 20px;
@@ -246,5 +254,28 @@ footer .glyphicon {
   {
     transform: translate(-108%, 22%) scale(3);
     opacity: 0;
+  }
+}
+
+footer
+{
+  background-color: #333 !important;
+  margin-top: 40px;
+}
+.about, .contact, .about h4, .contact h4
+{
+  color: #eee;
+}
+.about h4, .contact h4
+{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 990px) {
+  .contact h4
+  {
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 }
