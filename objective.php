@@ -43,7 +43,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.php">ABOUT</a></li>
         <li><a href="objective.php">OBJECTIVE</a></li>
-        <li><a href="board.php">MANAGING BOARD</a></li>
+        <li><a href="gallery.php">GALLERY</a></li>
         <li><a href="donation.php">DONATION</a></li>
         <li><a href="contact.php">CONTACT</a></li>
       </ul>

@@ -45,6 +45,15 @@
 
 
   </style>
+
+  <script>
+    // function add_to_modal(elmt)
+    // {
+    //   var ar = elmt.classList[elmt.classList.length-1].split('-');
+    //   console.log(elmt, ar[ar.length-1]);
+    // };
+  </script>
+
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -62,7 +71,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.php">ABOUT</a></li>
         <li><a href="objective.php">OBJECTIVE</a></li>
-        <li><a href="board.php">MANAGING BOARD</a></li>
+        <li><a href="gallery.php">GALLERY</a></li>
         <li><a href="donation.php">DONATION</a></li>
         <li><a href="contact.php">CONTACT</a></li>
       </ul>
@@ -76,69 +85,25 @@
 
 <div class="container">
 
-    <div class="row gallery gallery-1">
+    <div class="row Gallery" id="Gallery1">
         <div class="col-lg-12">
             <h1 class="page-header">Managing Board</h1>
         </div>
-        <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 1" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/600x350"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 2" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/600x350/2255EE"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 3" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/600x350/449955/FFF"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 4" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/600x350/992233"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 5" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/600x350/2255EE"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 6" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/600x350/449955/FFF"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 8" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/600x350/777"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 9" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/600x350/992233"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 10" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/600x350/EEE"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 11" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/600x350/449955/FFF"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 12" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/600x350/DDD"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 13" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/600x350/992233"></a></div>
-  </div> <!-- row -->
+        <div class="col-lg-3 col-sm-4 col-xs-6 lol"><a title="Gallery 1 Image 1" href="#"><img class="thumbnail img-responsive modal-member-1 " onload="//add_to_modal(this)" src="http://placehold.it/600x350"></a></div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 lol"><a title="Gallery 1 Image 2" href="#"><img class="thumbnail img-responsive modal-member-2" onload="//add_to_modal(this)" src="http://placehold.it/600x350/2255EE"></a></div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 lol"><a title="Gallery 1 Image 3" href="#"><img class="thumbnail img-responsive modal-member-3" onload="//add_to_modal(this)" src="http://placehold.it/600x350/449955/FFF"></a></div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 lol"><a title="Gallery 1 Image 4" href="#"><img class="thumbnail img-responsive modal-member-4" onload="//add_to_modal(this)" src="http://placehold.it/600x350/992233"></a></div>
+    </div> <!-- row -->
 
-  <div class="row gallery">
+  <div class="row Gallery">
         <div class="col-lg-12">
             <h1 class="page-header">Other Members</h1>
         </div>
-
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-        </div>
+        <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Gallery 2 Image 1" href="#"><img class="thumbnail 
+        img-responsive modal-member-5" onload="//add_to_modal(this)" src="http://placehold.it/600x350"></a></div>
+        <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Gallery 2 Image 2" href="#"><img class="thumbnail img-responsive modal-member-6" onload="//add_to_modal(this)" src="http://placehold.it/600x350/2255EE"></a></div>
+        <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Gallery 2 Image 3" href="#"><img class="thumbnail img-responsive modal-member-7" onload="//add_to_modal(this)" src="http://placehold.it/600x350/449955/FFF"></a></div>
+        <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Gallery 2 Image 4" href="#"><img class="thumbnail img-responsive modal-member-8" onload="//add_to_modal(this)" src="http://placehold.it/600x350/992233"></a></div>
   </div> <!-- row -->
 </div> <!-- container -->
 
@@ -150,11 +115,13 @@
     <h3 class="modal-title"></h3>
   </div>
   <div class="modal-body">
-    <div id="modalCarousel" class="carousel">
-          <div class="carousel-inner"></div>
-          <a class="carousel-control left" href="#modaCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-          <a class="carousel-control right" href="#modalCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-        </div>
+      <div id="modalCarousel" class="carousel">
+
+        <div class="carousel-inner"></div>
+
+        <a class="carousel-control left" href="#modalCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+        <a class="carousel-control right" href="#modalCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+      </div>
   </div>
   <div class="modal-footer">
     <button class="btn btn-default" data-dismiss="modal">Close</button>
@@ -201,24 +168,58 @@
 </footer>
 
 <script>
-  
+
   $(document).ready(function(){
+    
+    //console.log($('#Gallery1 > .lol'));
+    var imgs = $('#Gallery1 > .lol').not(function() { return this.complete; });
+    
+    var count = imgs.length;
+    
+    console.log('initially count', count);
+    
+    if(count)
+    {
+        imgs.on('load', function() {
+          console.log('inside loading', count);
+          count--;
+          /*
+          if( !count ) {
+              $("#Gallery1").show();
+              alert( 'all done' );
+          }
+          */
+        });
+
+    }
+    else
+    {
+        // $("#Gallery1").show();
+        console.log('else condition');
+    }
+
 
     /* copy loaded thumbnails into carousel */
-    $('.row .thumbnail').on('load', function() {
-      
+    $('.modal-member').on('ready', function() {
+      // console.log('thumbnail ready');
+      // console.log($(this));
     }).each(function(i) {
       if(this.complete) {
+
         var item = $('<div class="item"></div>');
         var itemDiv = $(this).parents('div');
         var title = $(this).parent('a').attr("title");
         
         item.attr("title",title);
+        // console.log(itemDiv.html());
         $(itemDiv.html()).appendTo(item);
         item.appendTo('.carousel-inner'); 
-        if (i==0){ // set first item active
+        
+        if (i==0){
+          // set first item active
          item.addClass('active');
         }
+
       }
     });
 
@@ -226,7 +227,7 @@
     $('#modalCarousel').carousel({interval:false});
 
     /* change modal title when slide changes */
-    $('#modalCarousel').on('slid.bs.carousel', function () {
+    $('#modalCarousel').on('slide.bs.carousel', function () {
       $('.modal-title').html($(this).find('.active').attr("title"));
     })
 
