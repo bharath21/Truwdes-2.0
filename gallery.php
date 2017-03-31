@@ -16,6 +16,28 @@
 	<!-- lightgallery -->
 	<link href="./lightgallery/dist/css/lightgallery.css" rel="stylesheet">
 	<link rel="stylesheet" href="./lightgallery/css/style.css">
+	<style>
+		.jumbotron, .navbar
+		{
+			background: #da22ff;
+
+			background: -webkit-linear-gradient(to left, #da22ff , #9733ee);
+
+			background: linear-gradient(to left, #da22ff , #9733ee);
+
+			/* background: #fe8c00;
+			background: -webkit-linear-gradient(to right, #fe8c00 , #f83600);
+			background: linear-gradient(to right, #fe8c00 , #f83600); */
+		}
+		.navbar-nav li:hover a
+		{
+		  color: #f857a6 !important;
+		}
+		.navbar-toggle:active .icon-bar
+		{
+		  border: 1px solid #f857a6 !important;
+		}
+	</style>
 </head>
 
 <body class="home">

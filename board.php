@@ -26,7 +26,10 @@
     {
       color: #FF8008 !important;
     }
-
+    .navbar-toggle:active .icon-bar
+    {
+      border: 1px solid #FF8008 !important;
+    }
     .gallery img:hover
     {
       /*border: 1px solid red;*/

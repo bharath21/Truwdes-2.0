@@ -17,13 +17,17 @@
   <style>
     .jumbotron, .navbar
     {
-      background: #00c6ff;
-      background: -webkit-linear-gradient(to right, #00c6ff , #0072ff);
-      background: linear-gradient(to right, #00c6ff , #0072ff);
+      background: #FF512F;
+      background: -webkit-linear-gradient(to left, #FF512F , #F09819);
+      background: linear-gradient(to left, #FF512F , #F09819);
     }
     .navbar-nav li:hover a
     {
-      color: #00c6ff !important;
+      color: #FF512F !important;
+    }
+    .navbar-toggle:active .icon-bar
+    {
+      border: 1px solid #FF512F !important;
     }
   </style>
 </head>

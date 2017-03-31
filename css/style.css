@@ -196,65 +196,13 @@ footer .glyphicon {
   margin-top: 10px;
   font-size: 20px;
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 13px 20px;
 }
 .donate_btn:hover
 {
+  color: #5bc0de;
+  border: 1px solid #5bc0de;
   background-color: white;
-  border: 1px solid tomato;
-}
-.donate_btn .heart
-{
-  color: tomato;
-}
-
-.donate_btn .circle
-{
-  position: absolute;
-  color: tomato;
-  opacity: 0;
-  transform-origin: center;
-}
-
-.donate_btn:hover .heart
-{
-  animation: heart 1s ease-out;
-  animation-delay: 10ms;
-}
-.donate_btn:hover .circle
-{
-  position: absolute;
-  animation: grow 1s linear;
-}
-
-@keyframes heart
-{
-  from
-  {
-    transform: scale(1);
-  }
-  50%
-  {
-    transform: scale(1.1);
-  }
-  to
-  {
-    transform: scale(1);
-  }
-}
-
-@keyframes grow
-{
-  from
-  {
-    transform: translate(-108%, 22%) scale(.5);
-    opacity: 1;
-  }
-  to
-  {
-    transform: translate(-108%, 22%) scale(3);
-    opacity: 0;
-  }
 }
 
 footer
@@ -278,4 +226,15 @@ footer
     margin-top: 30px;
     margin-bottom: 10px;
   }
+}
+
+.navbar-toggle:focus
+{
+  background-color: transparent !important;
+  outline: none !important;
+}
+
+.navbar-toggle:active
+{
+  background-color: white !important;
 }
