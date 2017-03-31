@@ -208,11 +208,11 @@
   <form id="donate_form" action="#donate" method="POST" class="row">
     <div class="form-group col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
       <label for="donorName">Name</label>
-      <input type="text" class="form-control" id="donorName" placeholder="Name">
+      <input type="text" class="form-control" id="donorName" placeholder="Name" required>
     </div>
     <div class="form-group col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-      <label for="donotionAmount">Amount ( <i class="fa fa-inr"></i> )</label>
-      <input type="number" class="form-control" id="donotionAmount" placeholder="Amount">
+      <label for="donationAmount">Amount ( <i class="fa fa-inr"></i> )</label>
+      <input type="number" class="form-control" id="donationAmount" placeholder="Amount" required>
     </div>
     <div class="form-group col-sm-8  col-md-6 col-sm-offset-2 col-md-offset-3 text-center">
       <div class="donate_btn_row ">
@@ -325,7 +325,7 @@
             </g>
           </g>
         </svg>
-        <button type="submit" class="btn btn-info donate_btn" data-toggle="modal" data-target="#myModal">Donate</button>
+        <button type="submit" class="btn btn-info donate_btn">Donate</button>
       </div>
     </div>
   </form>
@@ -333,7 +333,7 @@
 </div>
 
 <!-- modal -->
-<div id="myModal" class="modal fade" role="dialog">
+<div id="thankYouModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
@@ -521,7 +521,10 @@
 
 $(document).ready(function() {
   $('#donate_form').submit(function(evt) {
+    
     evt.preventDefault();
+
+    $('#thankYouModal').modal();
   });
 });
 
