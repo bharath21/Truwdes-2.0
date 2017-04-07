@@ -76,26 +76,9 @@ h4 {
   width: 100vw;
   position: relative;
 }
-.carousel-inner .item.active img
-{
-  /*top: 50%;*/
-  /*transform: translateY(-50%);*/
-}
 .carousel_header
 {
   padding: 0px !important;
-}
-.carousel-inner .item:nth-of-type(1)
-{
-  /*background-image: url("./images/DSC_0133.jpg");*/
-}
-.carousel-inner .item:nth-of-type(2)
-{
-  /*background-image: url("./images/DSC_0134.jpg");*/
-}
-.carousel-inner .item:nth-of-type(3)
-{
-  /*background-image: url("./images/DSC_0137.jpg");*/
 }
 .carousel-indicators li {
     border-color: #00c6ff;
