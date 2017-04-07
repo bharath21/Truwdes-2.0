@@ -17,7 +17,11 @@
     //     interval: 2000
     //   })
     // });
-</script>  
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -80,6 +84,12 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+
+    <div class="carousel_buttons">
+      <a class="pos-aware-btn" href="#">Join us<span></span></a>
+      <a class="pos-aware-btn" href="#">Support us<span></span></a>
+    </div>
+
   </div>
 </div>
 
@@ -337,6 +347,22 @@ $(document).ready(function(){
     {
       $('.navbar').css('background-color', '#00c6ff');
     }
+  });
+
+  $(function() {
+    $('.pos-aware-btn')
+      .on('mouseenter', function(e) {
+        var parentOffset = $(this).offset(),
+            relX = e.pageX - parentOffset.left,
+            relY = e.pageY - parentOffset.top;
+        $(this).find('span').css({top:relY, left:relX});
+      })
+      .on('mouseout', function(e) {
+        var parentOffset = $(this).offset(),
+            relX = e.pageX - parentOffset.left,
+            relY = e.pageY - parentOffset.top;
+        $(this).find('span').css({top:relY, left:relX});
+      });
   });
 
 </script>

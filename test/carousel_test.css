@@ -65,7 +65,7 @@ h4 {
 .carousel-control.right, .carousel-control.left {
     background-image: none;
     color: #00c6ff;
-    padding: 30px;
+    padding: 40px;
     margin: 0px;
     width: auto;
     height: auto;
@@ -80,12 +80,95 @@ h4 {
 {
   padding: 0px !important;
 }
+.carousel-indicators {
+  bottom: 100px;
+}
 .carousel-indicators li {
     border-color: #00c6ff;
 }
 .carousel-indicators li.active {
     background-color: #00c6ff;
 }
+@media screen and (max-width: 750px) {
+  .carousel_buttons
+  {
+    bottom: -30px !important;
+  }
+  .pos-aware-btn {
+    color: #00c6ff !important;
+    transition: color 100ms ease-in 50ms !important;
+  }
+  .pos-aware-btn:hover {
+    color: #fff !important;
+  }
+}
+@media screen and (max-width: 463px) {
+  .carousel-indicators
+  {
+    bottom: 174px;
+  }
+  .carousel-control.right span, .carousel-control.left span
+  {
+    top: 25%;
+  }
+}
+
+/* Carousel Buttons */
+.carousel_buttons
+{
+  position: relative;
+  display: block;
+  bottom: 150px;
+  z-index: 10;
+}
+
+.pos-aware-btn {
+  /*color: #00c6ff;*/
+  color: rgba(255, 255, 255, .8);
+  letter-spacing: .2em;
+  /*line-height: 80px;*/
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  /*width: 100%;*/
+  /*max-width: 250px;*/
+  margin: 1rem 30px;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  text-decoration: none;
+  padding: 15px 35px;
+}
+
+.pos-aware-btn span {
+  background: rgba(0, 198, 255, .8);
+  /*background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);*/
+  /*background: linear-gradient(to right, #0072ff, #00c6ff);*/
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.pos-aware-btn:hover {
+  color: rgba(255, 255, 255, .9);
+  text-decoration: none;
+  border: 1px solid #00c6ff;
+}
+.pos-aware-btn:hover span {
+  width: 250%;
+  height: 400px;
+}
+.pos-aware-btn:active {
+  background-color: white;
+  text-decoration: none;
+}
+/* end of carousel buttons*/
+
 .item h4 {
     font-size: 19px;
     line-height: 1.375em;
